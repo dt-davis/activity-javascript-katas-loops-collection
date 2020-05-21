@@ -12,8 +12,9 @@
     counter += 1
   }
 
-
-
+  for (let countera = 1; countera <= 20; countera++){
+    console.log(countera + ' this is countera')
+  }
 /** KATA 02 ⮕
 ***
 *** Log the even numbers from 1 to 20. (2, 4, 6,...18,20)
@@ -30,7 +31,9 @@ while(counter <= 20){
   counter += 1
 }
 
-
+for ( countera = 2; countera <= 20; countera += 2){
+  console.log(countera + ' this is countera')
+}
 
 /** KATA 03 ⮕
 ***
@@ -46,6 +49,10 @@ while(counter <= 20){
     console.log(counter)
   }
   counter += 1
+}
+
+for ( countera = 1; countera <= 20; countera += 2){
+  console.log(countera + ' this is countera')
 }
 
 
@@ -66,7 +73,9 @@ while(counter <= 100){
   counter += 1
 }
 
-
+for ( countera = 5; countera <= 100; countera += 5){
+  console.log(countera + ' this is countera')
+}
 
 /** KATA 05 ⮕
 ***
@@ -85,7 +94,12 @@ while(counter <= 100){
   counter += 1
 }
 
-
+for ( countera = 1; countera <= 100; countera++){
+  let squareRoot = Math.sqrt(countera)
+  if ((squareRoot % 1) === 0){
+    console.log( squareRoot + ' this is countera')
+  }
+}
 
 /** KATA 06 ⮕
 ***
@@ -100,6 +114,11 @@ while(counter >= 1){
   console.log(counter)
   counter += - 1
 }
+
+for (countera = 20; countera > 0; countera--){
+  console.log(countera + ' this is countera')
+}
+
 
 
 
@@ -119,7 +138,9 @@ while(counter >= 1){
   counter += -1
 }
 
-
+for (countera = 20; countera > 0; countera-=2){
+  console.log(countera + ' this is countera')
+}
 
 /** KATA 08 ⮕
 ***
@@ -137,7 +158,9 @@ while(counter >= 1){
     counter += -1
   }
 
-
+  for (countera = 19; countera > 0; countera-=2){
+    console.log(countera + ' this is countera')
+  }
 
 /** KATA 09 ⮕
 ***
@@ -152,10 +175,12 @@ while(counter >= 1){
     if ((counter % 5) === 0){
       console.log(counter)
     }
-    counter += -1
+    counter -= 1
   }
 
-
+  for (countera = 100; countera > 0; countera-=5){
+    console.log(countera + ' this is countera')
+  }
 
 /** KATA 10 ⮕
 ***
@@ -172,6 +197,32 @@ while(counter >= 1){
     }
     counter += -1
   }
+
+  for (countera = 100; countera > 0; countera--){
+    if (((Math.sqrt(countera)) % 1) === 0){
+      console.log(countera)
+    }
+  }
+
+  let s = 'aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz'
+
+  if( s.length <= 0 ){
+    console.log('0/0')
+  }else {
+    let counterEnd = s.length
+    let counter = 0
+    let errorNum = 0
+    let currentPos = s.charAt(0)
+    while (counter <= counterEnd){
+      currentPos = s.charAt(counter)
+      console.log(currentPos)
+      if (currentPos !== 'a'){
+        errorNum += 1
+      }
+      counter ++
+    }
+  console.log(errorNum + '/' + s.length)
+}
 
 
 
